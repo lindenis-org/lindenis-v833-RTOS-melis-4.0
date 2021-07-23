@@ -1,0 +1,429 @@
+# Microsoft Developer Studio Generated Dependency File, included by LiveFace.mak
+
+.\ChildFrm.cpp : \
+	"..\if\plug_common_if.h"\
+	"..\if\singleprocess_if.h"\
+	"..\if\singleprocess_plug_type.h"\
+	"..\include\basetypes.h"\
+	"..\include\file.h"\
+	"..\livefacecore\config.h"\
+	"..\pluginwrapper\plug_shell.h"\
+	"..\PlugInWrapper\PlugInWrapper.h"\
+	"..\SingleProcessWrapper\SingleProcessWrapper.h"\
+	".\ChildFrm.h"\
+	".\LiveFace.h"\
+	
+
+..\LiveFaceCore\FaceBuilder.cpp : \
+	"..\if\config_if.h"\
+	"..\if\config_plug_type.h"\
+	"..\if\facemaker_if.h"\
+	"..\if\facemaker_plug_type.h"\
+	"..\if\imagebuilder_if.h"\
+	"..\if\imagebuilder_plug_type.h"\
+	"..\if\imgdecode_if.h"\
+	"..\if\imgdecode_plug_type.h"\
+	"..\if\resaccess_if.h"\
+	"..\if\resaccess_plug_type.h"\
+	"..\if\scriptparser_if.h"\
+	"..\if\scriptparser_plug_type.h"\
+	"..\include\basetypes.h"\
+	"..\include\file.h"\
+	"..\interinc\script_type.h"\
+	"..\livefacecore\config.h"\
+	"..\LiveFaceCore\FaceBuilder.h"\
+	"..\LiveFaceCore\FaceScriptData.h"\
+	"..\plugincenter\plugin.h"\
+	
+
+..\LiveFaceCore\FaceDocument.cpp : \
+	"..\if\config_if.h"\
+	"..\if\config_plug_type.h"\
+	"..\if\facemaker_if.h"\
+	"..\if\facemaker_plug_type.h"\
+	"..\if\imagebuilder_if.h"\
+	"..\if\imagebuilder_plug_type.h"\
+	"..\if\imgdecode_if.h"\
+	"..\if\imgdecode_plug_type.h"\
+	"..\if\plug_common_if.h"\
+	"..\if\resaccess_if.h"\
+	"..\if\resaccess_plug_type.h"\
+	"..\if\scriptparser_if.h"\
+	"..\if\scriptparser_plug_type.h"\
+	"..\include\basetypes.h"\
+	"..\include\file.h"\
+	"..\interinc\script_type.h"\
+	"..\livefacecore\config.h"\
+	"..\livefacecore\face_document_config.h"\
+	"..\LiveFaceCore\FaceBuilder.h"\
+	"..\LiveFaceCore\FaceDocument.h"\
+	"..\LiveFaceCore\FaceDocumentBuilder.h"\
+	"..\LiveFaceCore\FaceDocumentData.h"\
+	"..\LiveFaceCore\FaceResource.h"\
+	"..\LiveFaceCore\FaceScript.h"\
+	"..\LiveFaceCore\FaceScriptData.h"\
+	"..\plugincenter\plugin.h"\
+	"..\PlugInCenter\PlugInCenter.h"\
+	"..\pluginwrapper\plug_shell.h"\
+	"..\PlugInWrapper\PlugInWrapper.h"\
+	
+
+..\LiveFaceCore\FaceDocumentBuilder.cpp : \
+	"..\if\config_if.h"\
+	"..\if\config_plug_type.h"\
+	"..\if\facemaker_if.h"\
+	"..\if\facemaker_plug_type.h"\
+	"..\if\imagebuilder_if.h"\
+	"..\if\imagebuilder_plug_type.h"\
+	"..\if\imgdecode_if.h"\
+	"..\if\imgdecode_plug_type.h"\
+	"..\if\resaccess_if.h"\
+	"..\if\resaccess_plug_type.h"\
+	"..\if\scriptparser_if.h"\
+	"..\if\scriptparser_plug_type.h"\
+	"..\include\basetypes.h"\
+	"..\include\file.h"\
+	"..\livefacecore\config.h"\
+	"..\livefacecore\face_document_config.h"\
+	"..\LiveFaceCore\FaceDocumentBuilder.h"\
+	"..\LiveFaceCore\FaceDocumentData.h"\
+	"..\plugincenter\plugin.h"\
+	
+
+..\LiveFaceCore\FaceDocumentData.cpp : \
+	"..\include\basetypes.h"\
+	"..\include\file.h"\
+	"..\livefacecore\config.h"\
+	"..\LiveFaceCore\FaceDocumentData.h"\
+	
+
+..\LiveFaceCore\FaceResource.cpp : \
+	"..\if\config_if.h"\
+	"..\if\config_plug_type.h"\
+	"..\if\facemaker_if.h"\
+	"..\if\facemaker_plug_type.h"\
+	"..\if\imagebuilder_if.h"\
+	"..\if\imagebuilder_plug_type.h"\
+	"..\if\imgdecode_if.h"\
+	"..\if\imgdecode_plug_type.h"\
+	"..\if\resaccess_if.h"\
+	"..\if\resaccess_plug_type.h"\
+	"..\if\scriptparser_if.h"\
+	"..\if\scriptparser_plug_type.h"\
+	"..\include\basetypes.h"\
+	"..\include\file.h"\
+	"..\livefacecore\config.h"\
+	"..\LiveFaceCore\FaceResource.h"\
+	"..\plugincenter\plugin.h"\
+	
+
+..\LiveFaceCore\FaceScript.cpp : \
+	"..\if\config_if.h"\
+	"..\if\config_plug_type.h"\
+	"..\if\facemaker_if.h"\
+	"..\if\facemaker_plug_type.h"\
+	"..\if\imagebuilder_if.h"\
+	"..\if\imagebuilder_plug_type.h"\
+	"..\if\imgdecode_if.h"\
+	"..\if\imgdecode_plug_type.h"\
+	"..\if\resaccess_if.h"\
+	"..\if\resaccess_plug_type.h"\
+	"..\if\scriptparser_if.h"\
+	"..\if\scriptparser_plug_type.h"\
+	"..\include\basetypes.h"\
+	"..\include\file.h"\
+	"..\interinc\script_type.h"\
+	"..\livefacecore\config.h"\
+	"..\LiveFaceCore\FaceScript.h"\
+	"..\LiveFaceCore\FaceScriptData.h"\
+	"..\plugincenter\plugin.h"\
+	
+
+..\LiveFaceCore\FaceScriptData.cpp : \
+	"..\include\basetypes.h"\
+	"..\include\file.h"\
+	"..\interinc\script_type.h"\
+	"..\livefacecore\config.h"\
+	"..\LiveFaceCore\FaceScriptData.h"\
+	
+
+.\LiveFace.cpp : \
+	"..\if\config_if.h"\
+	"..\if\config_plug_type.h"\
+	"..\if\facemaker_if.h"\
+	"..\if\facemaker_plug_type.h"\
+	"..\if\imagebuilder_if.h"\
+	"..\if\imagebuilder_plug_type.h"\
+	"..\if\imgdecode_if.h"\
+	"..\if\imgdecode_plug_type.h"\
+	"..\if\plug_common_if.h"\
+	"..\if\resaccess_if.h"\
+	"..\if\resaccess_plug_type.h"\
+	"..\if\scriptparser_if.h"\
+	"..\if\scriptparser_plug_type.h"\
+	"..\if\singleprocess_if.h"\
+	"..\if\singleprocess_plug_type.h"\
+	"..\include\basetypes.h"\
+	"..\include\file.h"\
+	"..\interinc\script_type.h"\
+	"..\livefacecore\config.h"\
+	"..\LiveFaceCore\FaceBuilder.h"\
+	"..\LiveFaceCore\FaceDocument.h"\
+	"..\LiveFaceCore\FaceDocumentBuilder.h"\
+	"..\LiveFaceCore\FaceDocumentData.h"\
+	"..\LiveFaceCore\FaceResource.h"\
+	"..\LiveFaceCore\FaceScript.h"\
+	"..\LiveFaceCore\FaceScriptData.h"\
+	"..\plugincenter\plugin.h"\
+	"..\PlugInCenter\PlugInCenter.h"\
+	"..\pluginwrapper\plug_shell.h"\
+	"..\PlugInWrapper\PlugInWrapper.h"\
+	"..\share\error.cpp"\
+	"..\share\file.cpp"\
+	"..\SingleProcessWrapper\SingleProcessWrapper.h"\
+	".\ChildFrm.h"\
+	".\include\xfile.h"\
+	".\include\ximacfg.h"\
+	".\include\ximadef.h"\
+	".\include\ximage.h"\
+	".\include\xiofile.h"\
+	".\include\xmemfile.h"\
+	".\LiveFace.h"\
+	".\LiveFaceDoc.h"\
+	".\LiveFaceView.h"\
+	".\MainFrm.h"\
+	".\PreviewBar.h"\
+	
+
+.\LiveFace.rc : \
+	".\res\LiveFace.ico"\
+	".\res\LiveFace.rc2"\
+	".\res\LiveFaceDoc.ico"\
+	".\res\Toolbar.bmp"\
+	
+
+.\LiveFaceDoc.cpp : \
+	"..\if\config_if.h"\
+	"..\if\config_plug_type.h"\
+	"..\if\facemaker_if.h"\
+	"..\if\facemaker_plug_type.h"\
+	"..\if\imagebuilder_if.h"\
+	"..\if\imagebuilder_plug_type.h"\
+	"..\if\imgdecode_if.h"\
+	"..\if\imgdecode_plug_type.h"\
+	"..\if\plug_common_if.h"\
+	"..\if\resaccess_if.h"\
+	"..\if\resaccess_plug_type.h"\
+	"..\if\scriptparser_if.h"\
+	"..\if\scriptparser_plug_type.h"\
+	"..\if\singleprocess_if.h"\
+	"..\if\singleprocess_plug_type.h"\
+	"..\include\basetypes.h"\
+	"..\include\file.h"\
+	"..\interinc\script_type.h"\
+	"..\livefacecore\config.h"\
+	"..\LiveFaceCore\FaceBuilder.h"\
+	"..\LiveFaceCore\FaceDocument.h"\
+	"..\LiveFaceCore\FaceDocumentBuilder.h"\
+	"..\LiveFaceCore\FaceDocumentData.h"\
+	"..\LiveFaceCore\FaceResource.h"\
+	"..\LiveFaceCore\FaceScript.h"\
+	"..\LiveFaceCore\FaceScriptData.h"\
+	"..\plugincenter\plugin.h"\
+	"..\PlugInCenter\PlugInCenter.h"\
+	"..\pluginwrapper\plug_shell.h"\
+	"..\PlugInWrapper\PlugInWrapper.h"\
+	"..\SingleProcessWrapper\SingleProcessWrapper.h"\
+	".\include\xfile.h"\
+	".\include\ximacfg.h"\
+	".\include\ximadef.h"\
+	".\include\ximage.h"\
+	".\include\xiofile.h"\
+	".\include\xmemfile.h"\
+	".\LiveFace.h"\
+	".\LiveFaceDoc.h"\
+	".\LiveFaceView.h"\
+	".\MainFrm.h"\
+	".\PreviewBar.h"\
+	
+
+.\LiveFaceView.cpp : \
+	"..\if\config_if.h"\
+	"..\if\config_plug_type.h"\
+	"..\if\facemaker_if.h"\
+	"..\if\facemaker_plug_type.h"\
+	"..\if\imagebuilder_if.h"\
+	"..\if\imagebuilder_plug_type.h"\
+	"..\if\imgdecode_if.h"\
+	"..\if\imgdecode_plug_type.h"\
+	"..\if\plug_common_if.h"\
+	"..\if\resaccess_if.h"\
+	"..\if\resaccess_plug_type.h"\
+	"..\if\scriptparser_if.h"\
+	"..\if\scriptparser_plug_type.h"\
+	"..\if\singleprocess_if.h"\
+	"..\if\singleprocess_plug_type.h"\
+	"..\include\basetypes.h"\
+	"..\include\file.h"\
+	"..\interinc\script_type.h"\
+	"..\livefacecore\config.h"\
+	"..\LiveFaceCore\FaceBuilder.h"\
+	"..\LiveFaceCore\FaceDocument.h"\
+	"..\LiveFaceCore\FaceDocumentBuilder.h"\
+	"..\LiveFaceCore\FaceDocumentData.h"\
+	"..\LiveFaceCore\FaceResource.h"\
+	"..\LiveFaceCore\FaceScript.h"\
+	"..\LiveFaceCore\FaceScriptData.h"\
+	"..\plugincenter\plugin.h"\
+	"..\PlugInCenter\PlugInCenter.h"\
+	"..\pluginwrapper\plug_shell.h"\
+	"..\PlugInWrapper\PlugInWrapper.h"\
+	"..\SingleProcessWrapper\SingleProcessWrapper.h"\
+	".\include\xfile.h"\
+	".\include\ximacfg.h"\
+	".\include\ximadef.h"\
+	".\include\ximage.h"\
+	".\include\xiofile.h"\
+	".\include\xmemfile.h"\
+	".\LiveFace.h"\
+	".\LiveFaceDoc.h"\
+	".\LiveFaceView.h"\
+	
+
+.\MainFrm.cpp : \
+	"..\if\config_if.h"\
+	"..\if\config_plug_type.h"\
+	"..\if\facemaker_if.h"\
+	"..\if\facemaker_plug_type.h"\
+	"..\if\imagebuilder_if.h"\
+	"..\if\imagebuilder_plug_type.h"\
+	"..\if\imgdecode_if.h"\
+	"..\if\imgdecode_plug_type.h"\
+	"..\if\plug_common_if.h"\
+	"..\if\resaccess_if.h"\
+	"..\if\resaccess_plug_type.h"\
+	"..\if\scriptparser_if.h"\
+	"..\if\scriptparser_plug_type.h"\
+	"..\if\singleprocess_if.h"\
+	"..\if\singleprocess_plug_type.h"\
+	"..\include\basetypes.h"\
+	"..\include\file.h"\
+	"..\interinc\script_type.h"\
+	"..\livefacecore\config.h"\
+	"..\LiveFaceCore\FaceBuilder.h"\
+	"..\LiveFaceCore\FaceDocument.h"\
+	"..\LiveFaceCore\FaceDocumentBuilder.h"\
+	"..\LiveFaceCore\FaceDocumentData.h"\
+	"..\LiveFaceCore\FaceResource.h"\
+	"..\LiveFaceCore\FaceScript.h"\
+	"..\LiveFaceCore\FaceScriptData.h"\
+	"..\plugincenter\plugin.h"\
+	"..\PlugInCenter\PlugInCenter.h"\
+	"..\pluginwrapper\plug_shell.h"\
+	"..\PlugInWrapper\PlugInWrapper.h"\
+	"..\SingleProcessWrapper\SingleProcessWrapper.h"\
+	".\include\xfile.h"\
+	".\include\ximacfg.h"\
+	".\include\ximadef.h"\
+	".\include\ximage.h"\
+	".\include\xiofile.h"\
+	".\include\xmemfile.h"\
+	".\LiveFace.h"\
+	".\LiveFaceDoc.h"\
+	".\MainFrm.h"\
+	".\PreviewBar.h"\
+	
+
+..\PlugInCenter\PlugInCenter.cpp : \
+	"..\if\config_if.h"\
+	"..\if\config_plug_type.h"\
+	"..\if\facemaker_if.h"\
+	"..\if\facemaker_plug_type.h"\
+	"..\if\imagebuilder_if.h"\
+	"..\if\imagebuilder_plug_type.h"\
+	"..\if\imgdecode_if.h"\
+	"..\if\imgdecode_plug_type.h"\
+	"..\if\plug_common_if.h"\
+	"..\if\resaccess_if.h"\
+	"..\if\resaccess_plug_type.h"\
+	"..\if\scriptparser_if.h"\
+	"..\if\scriptparser_plug_type.h"\
+	"..\include\basetypes.h"\
+	"..\include\file.h"\
+	"..\plugincenter\plugin.cpp"\
+	"..\plugincenter\plugin.h"\
+	"..\PlugInCenter\PlugInCenter.h"\
+	"..\pluginwrapper\plug_shell.h"\
+	"..\PlugInWrapper\PlugInWrapper.h"\
+	
+
+..\PlugInWrapper\PlugInWrapper.cpp : \
+	"..\if\plug_common_if.h"\
+	"..\include\basetypes.h"\
+	"..\pluginwrapper\plug_shell.cpp"\
+	"..\pluginwrapper\plug_shell.h"\
+	"..\PlugInWrapper\PlugInWrapper.h"\
+	
+
+.\PreviewBar.cpp : \
+	"..\if\config_if.h"\
+	"..\if\config_plug_type.h"\
+	"..\if\facemaker_if.h"\
+	"..\if\facemaker_plug_type.h"\
+	"..\if\imagebuilder_if.h"\
+	"..\if\imagebuilder_plug_type.h"\
+	"..\if\imgdecode_if.h"\
+	"..\if\imgdecode_plug_type.h"\
+	"..\if\plug_common_if.h"\
+	"..\if\resaccess_if.h"\
+	"..\if\resaccess_plug_type.h"\
+	"..\if\scriptparser_if.h"\
+	"..\if\scriptparser_plug_type.h"\
+	"..\if\singleprocess_if.h"\
+	"..\if\singleprocess_plug_type.h"\
+	"..\include\basetypes.h"\
+	"..\include\file.h"\
+	"..\interinc\script_type.h"\
+	"..\livefacecore\config.h"\
+	"..\LiveFaceCore\FaceBuilder.h"\
+	"..\LiveFaceCore\FaceDocument.h"\
+	"..\LiveFaceCore\FaceDocumentBuilder.h"\
+	"..\LiveFaceCore\FaceDocumentData.h"\
+	"..\LiveFaceCore\FaceResource.h"\
+	"..\LiveFaceCore\FaceScript.h"\
+	"..\LiveFaceCore\FaceScriptData.h"\
+	"..\plugincenter\plugin.h"\
+	"..\PlugInCenter\PlugInCenter.h"\
+	"..\pluginwrapper\plug_shell.h"\
+	"..\PlugInWrapper\PlugInWrapper.h"\
+	"..\SingleProcessWrapper\SingleProcessWrapper.h"\
+	".\include\xfile.h"\
+	".\include\ximacfg.h"\
+	".\include\ximadef.h"\
+	".\include\ximage.h"\
+	".\include\xiofile.h"\
+	".\include\xmemfile.h"\
+	".\LiveFace.h"\
+	".\LiveFaceDoc.h"\
+	".\MainFrm.h"\
+	".\memdc.h"\
+	".\PreviewBar.h"\
+	
+
+..\SingleProcessWrapper\SingleProcessWrapper.cpp : \
+	"..\if\plug_common_if.h"\
+	"..\if\singleprocess_if.h"\
+	"..\if\singleprocess_plug_type.h"\
+	"..\include\basetypes.h"\
+	"..\pluginwrapper\plug_shell.h"\
+	"..\PlugInWrapper\PlugInWrapper.h"\
+	"..\SingleProcessWrapper\SingleProcessWrapper.h"\
+	
+
+.\StdAfx.cpp : \
+	".\control_bar\scbarcf.h"\
+	".\control_bar\scbarg.h"\
+	".\control_bar\sizecbar.h"\
+	".\StdAfx.h"\
+	"c:\progra~1\micros~4\vc98\include\basetsd.h"\
+	

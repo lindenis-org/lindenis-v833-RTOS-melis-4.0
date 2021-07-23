@@ -1,0 +1,16 @@
+call cc nls_base
+call cc nls_cp936
+call cc page_pool
+call cc slab
+call cc buffer
+call cc ctype
+call cc dcache
+call cc dir
+call cc file
+call cc fsman
+call cc fstime
+call cc fstools
+call cc inode
+call cc namei
+call cc super
+call pk b_fatfs

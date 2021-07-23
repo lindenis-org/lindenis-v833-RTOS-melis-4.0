@@ -1,0 +1,24 @@
+subdir-ccflags-y := -I$(srctree)/include/melis/kernel
+subdir-ccflags-y += -I$(srctree)/ekernel/core/rt-thread/include
+subdir-ccflags-y += -I$(srctree)/ekernel/subsys
+subdir-ccflags-y += -I$(srctree)/ekernel/subsys/thirdparty/dfs/include
+subdir-ccflags-y += -I$(srctree)/ekernel/subsys/finsh_cli
+
+obj-${CONFIG_PTHREAD} += pthreads/
+obj-${CONFIG_EXTERN_LIBC} += libc/
+obj-${CONFIG_BENCHMARK} += benchmark/
+obj-${CONFIG_CXX} += cplusplus/
+obj-${CONFIG_SAMPLES} += samples/
+obj-y += samples/
+obj-y += lib/
+obj-${CONFIG_RT_USING_FINSH} += finsh_cli/
+obj-y += debug/
+obj-y += net/
+obj-y += aw/
+obj-y += thirdparty/
+obj-y += config/
+obj-y += env/
+obj-y += avframework/
+obj-${CONFIG_SUBSYS_ARCHIVAL} += archival/
+obj-${CONFIG_KASAN} += kasan/
+obj-${CONFIG_COMPONENT_ADBD} += adbd/

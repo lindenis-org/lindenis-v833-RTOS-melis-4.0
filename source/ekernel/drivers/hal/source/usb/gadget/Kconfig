@@ -1,0 +1,15 @@
+menuconfig DRIVERS_USB_GADGET
+	bool "USB Gadget Support"
+	depends on DRIVERS_USB_UDC
+	help
+	  Enable this configuration option if you want to run USB peripheral device.
+
+if DRIVERS_USB_GADGET
+
+config DRIVERS_USB_GADGET_ADB
+	bool "ADB Gadget"
+	default n
+	help
+	  Enable adb gadget function
+
+endif #DRIVERS_USB_GADGET

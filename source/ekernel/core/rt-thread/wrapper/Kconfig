@@ -1,0 +1,8 @@
+menu "Melis Module Support"
+
+config  MELIS_MODULE
+        bool "Support melis module"
+        select MELIS_VIRTUAL_FILESYSTEM
+        default n
+
+endmenu

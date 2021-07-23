@@ -1,0 +1,558 @@
+;---------------------------------------------------------------------------------------------------------
+; 说明： 脚本中的字符串区分大小写，用户可以修改"="后面的数值，但是不要修改前面的字符串
+; 描述gpio的形式：Port:端口+组内序号<功能分配><内部电阻状态><驱动能力><输出电平状态>
+; pinName = port:P[A-J]<CFG><PULL><DRV_LEVEL><DATA>
+;---------------------------------------------------------------------------------------------------------
+
+[update_key]
+;----------------------------------------------------------------------------------
+;-------key_type  0:不需要强制升级   1:单个按键    2:两个按键组合             -------
+;----------------------------------------------------------------------------------
+key_type  = 1
+
+;----------------------------------------------------------------------------------
+;------------------   以下是只有单个按键(0:拉低  1:拉高)的情况   --------------------
+;----------------------------------------------------------------------------------
+key_value0  = 0
+port0				= 1
+port_num0   = 1 
+
+;----------------------------------------------------------------------------------
+;----------------------       以下是组合按键        ------------------------------
+;----------------------------------------------------------------------------------
+key_value1  = 0
+port1				= 1
+port_num1   = 1
+
+key_value2  = 0
+port2				= 1
+port_num2   = 2
+
+;----------------------------------------------------------------------------------
+;----------------    以下是矩阵按键一个输出，两个输入的情况    -----------------------
+;----------------------------------------------------------------------------------
+
+;key_value1  = 0
+;port_input1 =  1
+;port_input_num1 = 0 
+
+;port_input2 =  1
+;port_input_num2 = 1
+
+;port_output =  1
+;port_output_num = 2
+
+
+
+
+
+;----------------------------------------------------------------------------------
+; system configuration
+;----------------------------------------------------------------------------------
+[target]
+debugenable = 0
+storage_mode    = 0
+boot_clock      = 408
+core_vol        = 1100
+
+;配置从nor还是卡启动 0:nor 1:sd
+[boot_type]
+boot_type = 0
+
+[product]
+eraseflag       = 1
+jtag            = 0
+[card_boot]
+logical_start   = 40960
+
+[card_boot0_para]
+card_ctrl       = 0
+card_high_speed = 1
+card_line       = 4
+SDC_CLK         = port:PF2<2><default><default><default>
+SDC_CMD         = port:PF3<2><default><default><default>
+SDC_D0          = port:PF1<2><default><default><default>
+SDC_D1          = port:PF0<2><default><default><default>
+SDC_D2          = port:PF5<2><default><default><default>
+SDC_D3          = port:PF4<2><default><default><default>
+
+[card_boot1_para]
+card_ctrl       = 1
+card_high_speed = 1
+card_line       = 1
+SDC_CLK         = port:PC0<3><default><default><default>
+SDC_CMD         = port:PC1<3><default><default><default>
+SDC_D0          = port:PC2<3><default><default><default>
+
+[iis_para]
+IIS_MCLK	    = port:PD7<3><default><default><default>
+IIS_BCLK	    = port:PD8<3><default><default><default>
+IIS_LRCK	    = port:PD9<3><default><default><default>
+IIS_DI		    = port:PD10<3><default><default><default>
+IIS_DO0		    = port:PD11<3><default><default><default>
+
+[twi_para]
+twi_port        = 0
+twi_scl         = port:PA6<2>
+twi_sda         = port:PA7<2>
+
+[uart_para]
+uart_debug_port = 0
+;uart_debug_tx   = port:PF4<4><0><0><0>
+;uart_debug_rx   = port:PF2<4><0><0><0>
+
+uart_debug_tx   = port:PB0<2><0><0><0>
+uart_debug_rx   = port:PB1<2><0><0><0>
+
+;uart_debug_port = 1
+;uart_debug_tx   = port:PB3<3>
+;uart_debug_rx   = port:PB4<3>
+
+;uart_debug_port = 2
+;uart_debug_tx   = port:PE7<3>
+;uart_debug_rx   = port:PE8<3>
+
+[jtag_para]
+jtag_enable     = 1
+jtag_ms         = port:PF0<4>
+jtag_ck         = port:PF5<4>
+jtag_do         = port:PF3<4>
+jtag_di         = port:PF1<4>
+
+[twi0_para]
+twi0_used       = 1
+twi_scl         = port:PB7<2><default><default><default>
+twi_sda         = port:PB8<2><default><default><default>
+
+[twi1_para]
+twi1_used       = 0
+twi1_scl        = port:PG6<2><default><default><default>
+twi1_sda        = port:PG7<2><default><default><default>
+
+[twi2_para]
+twi2_used       = 0
+twi2_scl        = port:PG6<2><default><default><default>
+twi2_sda        = port:PG7<2><default><default><default>
+
+
+[uart_para0]
+uart_used       = 0
+uart_port       = 0
+uart_type       = 2
+uart_debug_tx   = port:PF2<3>
+uart_debug_rx   = port:PF4<3>
+
+[uart_para1]
+uart_used       = 0
+uart_port       = 1
+uart_type       = 2
+uart1_tx        = port:PA2<5>
+uart1_rx        = port:PA3<5>
+
+[uart_para2]
+uart_used       = 0
+uart_port       = 2
+uart_type       = 2
+uart_debug_tx   = port:PE7<3>
+uart_debug_rx   = port:PE8<3>
+
+
+[power_para]
+power_used = 0
+power_msg       = 0x38
+power_twi       = 0
+power_on   = port:PC8<1><default><default><default>
+charge_status = port:PG2<0><default><default><default>
+adc_exp	= 1027
+
+[rtc_para]
+rtc_exist = 1
+inner_timer     = 1
+
+
+[display_mode]
+pvp_mode        = 1
+
+[tvout_para]
+tv_en = port:PC11<1><2><1><1>
+
+[auto_test_para]
+auto_test_enable = 0
+
+[matrixkey_para]
+period = 5
+pw_off_time = 2000
+row_num = 2
+;pinName = port:P[A-J]<CFG><PULL><DRV_LEVEL><DATA>
+input_row1 = port:PC13<0><2><1><1>
+input_row2 = port:PC14<0><2><1><1>
+output_col = port:PC15<1><1><1><1>
+;pw_off = port:PA3<0><default><default><default>
+
+[dtmb_para]
+agc_pin = port:PG9<2><default><default><default>
+antenna_switch = port:PG0<1><1><default><1>
+
+[tsc_para]
+tsc_demod_select = 0
+;tsc_demod = 0, use inner DTMB IP
+;tsc_demod = 1, use external demod
+tsc_clk   = port:PD10<5><default><default><default>
+tsc_error = port:PD11<5><default><default><default>
+tsc_psync = port:PD12<5><default><default><default>
+tsc_valid = port:PD13<5><default><default><default>
+tsc_data0 = port:PD14<5><default><default><default>
+;tsc_data1 = port:PD15<5><default><default><default>
+;tsc_data2 = port:PD16<5><default><default><default>
+;tsc_data3 = port:PD17<5><default><default><default>
+;tsc_data4 = port:PD18<5><default><default><default>
+;tsc_data5 = port:PD19<5><default><default><default>
+;tsc_data6 = port:PD20<5><default><default><default>
+;tsc_data7 = port:PD21<5><default><default><default>
+;功放类型,FM要切换到AB类
+[amplify]
+ab_or_d = port:PG3<1><1><1>
+
+[sddet_para]
+detect_pin  = port:PF6<0><1><1>
+
+
+[sdcard_global]
+used_card_no    = 0x01
+;used_card_no = 0x01, when use card0
+;used_card_no = 0x02, when use card1
+;used_card_no = 0x03, when use card0 & card1
+
+[sdcard0_para]
+bus_width     = 4
+SDC_CLK         = port:PF2<2><default><default><default>
+SDC_CMD         = port:PF3<2><default><default><default>
+SDC_D0          = port:PF1<2><default><default><default>
+SDC_D1          = port:PF0<2><default><default><default>
+SDC_D2          = port:PF5<2><default><default><default>
+SDC_D3          = port:PF4<2><default><default><default>
+
+[sdcard1_para]
+bus_width     = 1
+SDC_CLK         = port:PC0<3><default><default><default>
+SDC_CMD         = port:PC1<3><default><default><default>
+SDC_D0          = port:PC2<3><default><default><default>
+
+
+[audio_para]
+hp_driver_need  = 1
+;功放使能开关
+PA_SHDN	= port:PG6<1><1><default><1>
+;耳机插入检测
+HP_DET	= port:PG7<0><1><default><default>
+
+[tp_para]
+if_reverse      = 0
+
+[spi_global]
+spi_used        = 0x01
+
+[spi0_para]
+spi_cs_bitmap   = 0x01
+SPI_CS0	        = port:PB9<2><default><default><default>
+SPI_CLK		    = port:PB10<2><default><default><default>
+SPI_MOSI	    = port:PB11<2><default><default><default>
+SPI_MISO	    = port:PB12<2><default><default><default>
+
+
+[ir_para]
+IR_RX	        = port:PB2<3><default><default><default>
+[smc_para]
+smc_clk			= port:PB3<5><default><default><default>
+smc_data		= port:PB4<5><default><default><default>
+smc_rst			= port:PB5<5><default><default><default>
+smc_det			= port:PB6<5><default><default><default>
+
+[pwm0_para]
+pwm0 = port:PD22<2><default><default><default>
+
+[pwm1_para]
+pwm1 = port:PG7<5><0><default><default>
+
+
+;--------------------------------------------------------
+;                       DISPALY
+;--------------------------------------------------------
+[display]
+disp_init_enable          = 1
+disp_mode                 = 0
+disp_epos_logo_enable	  = 1
+;-------------------LCD ---------------
+screen0_output_type	     = 1
+screen0_output_mode      = 4
+;-------------------TV ---------------
+screen1_output_type      = 2
+screen1_output_mode      = 11
+
+;1:从lcd启动 2:从TV OUT启动(有的客户不接屏，TV OUT当LCD用) 
+display_output_type = 1
+
+[lcd0_para]
+; lcd enable
+lcd_used    = 1
+
+;lcd output type  0:rgb  1:lvds  2:dsi
+lcd_output_type = 0
+
+;lcd_power = port:PE10<1><default><default><1>
+;lcd_reset = port:PE10<1><default><default><1>
+lcd_bl_en = port:PG5<1><default><default><1>
+;lcd_gpio_1 = port:PG0<1><default><default><1>
+;lcd_gpio_2 = port:PG1<1><default><default><1>
+;lcd_gpio_3 = port:PG2<1><default><default><1>
+
+;hv
+lcdd2		= port:PD0<2><default><default><default>
+lcdd3		= port:PD1<2><default><default><default>
+lcdd4		= port:PD2<2><default><default><default>
+lcdd5		= port:PD3<2><default><default><default>
+lcdd6		= port:PD4<2><default><default><default>
+lcdd7		= port:PD5<2><default><default><default>
+lcdd10		= port:PD6<2><default><default><default>
+lcdd11		= port:PD7<2><default><default><default>
+lcdd12		= port:PD8<2><default><default><default>
+lcdd13		= port:PD9<2><default><default><default>
+lcdd14		= port:PD10<2><default><default><default>
+lcdd15		= port:PD11<2><default><default><default>
+lcdd18		= port:PD12<2><default><default><default>
+lcdd19		= port:PD13<2><default><default><default>
+lcdd20		= port:PD14<2><default><default><default>
+lcdd21		= port:PD15<2><default><default><default>
+lcdd22		= port:PD16<2><default><default><default>
+lcdd23		= port:PD17<2><default><default><default>
+lcdclk		= port:PD18<2><default><default><default>
+lcdde		= port:PD19<2><default><default><default>
+lcdhsync	= port:PD20<2><default><default><default>
+lcdvsync	= port:PD21<2><default><default><default>
+
+;lvds
+lvds_lcdd2		= port:PD0<3><0><default><default>
+lvds_lcdd3		= port:PD1<3><0><default><default>
+lvds_lcdd4		= port:PD2<3><0><default><default>
+lvds_lcdd5		= port:PD3<3><0><default><default>
+lvds_lcdd6		= port:PD4<3><0><default><default>
+lvds_lcdd7		= port:PD5<3><0><default><default>
+lvds_lcdd10		= port:PD6<3><0><default><default>
+lvds_lcdd11		= port:PD7<3><0><default><default>
+lvds_lcdd12		= port:PD8<3><0><default><default>
+lvds_lcdd13		= port:PD9<3><0><default><default>
+;lvds_lcdd14		= port:PD10<3><0><default><default>	
+;lvds_lcdd15		= port:PD11<3><0><default><default>	
+;lvds_lcdd18		= port:PD12<3><0><default><default>		
+;lvds_lcdd19		= port:PD13<3><0><default><default>	
+;lvds_lcdd20		= port:PD14<3><0><default><default>	
+;lvds_lcdd21		= port:PD15<3><0><default><default>	
+;lvds_lcdd22		= port:PD16<3><0><default><default>
+;lvds_lcdd23		= port:PD17<3><0><default><default>	
+;lvds_lcdclk		= port:PD18<3><0><default><default>	
+;lvds_lcdde		= port:PD19<3><0><default><default>
+
+;dsi
+
+
+;供用户配置参数，用于某些不是标准的cvbs 输入，左右上下可能会有一些黑边，
+;通过这两个值来修改, 范围为0-7，默认为0
+[tvd_para]
+x_off	= 0
+y_off	=	0
+
+;--------------------------------------------------------
+;                       USB参数
+;--------------------------------------------------------
+[usb_para]
+usb_global_enable  = 1
+usbc_num           = 1
+
+;0:显示本地盘符和sd卡盘符 1:只显示sd卡盘符 2:只显示本地盘符
+mode		   = 0
+
+
+;--------------------------------------------------------
+;                   USB0控制标志
+;--------------------------------------------------------
+[usbc0]
+usb_enable          = 1
+usb_port_type       = 2
+usb_detect_type     = 3
+usb_scan_delay      = 0
+;usb_id_gpio         = port:PB6<0><1><default><default>
+;usb_det_vbus_gpio   = port:PB5<0><0><default><default>
+usb_drv_vbus_gpio    = port:PG1<1><0><default><0>
+
+
+;--------------------------------------------------------
+;                       DRAM
+;--------------------------------------------------------
+[dram_para]
+dram_clk = 408 
+dram_type = 2 
+dram_zq = 0x3b3bfb 
+dram_odt_en = 0 
+dram_para1 = 0x000000D2
+dram_para2 = 0x400000 
+dram_mr0 = 0xE73 
+dram_mr1 = 0x0 
+dram_mr2 = 0x0 
+dram_mr3 = 0x0 
+dram_tpr0 = 0x00461950 
+dram_tpr1 = 0x0121210B 
+dram_tpr2 = 0x0004F03A 
+dram_tpr3 = 0x0AD3A981 
+dram_tpr4 = 0x0 
+dram_tpr5 = 0x0 
+dram_tpr6 = 0x0 
+dram_tpr7 = 0x1e380000 
+dram_tpr8 = 0x0 
+dram_tpr9 = 0x0 
+dram_tpr10 = 0x0 
+dram_tpr11 = 0x0 
+dram_tpr12 = 0x0 
+dram_tpr13 = 0x0
+
+
+[standby_eint_para]
+;pio_pin  = port:PD1<6><default><default><default>
+;eint_num = 1
+;trigger_condition = 2
+
+;--------------------------------------------------------
+;nor 型号配置样例
+;[spinor_para]
+;spinor_patten_num = 2 ;nor 型号配置项的个数
+;
+;[spinor0]          ;第1款nor 的配置(旺宏)
+;rdid=0x001620c2    ;nor的rdid，如果驱动不支持该型号的nor，则会在串口打印出其rdid
+;capaticy=32        ;nor容量，单位M bit
+;freq_read=33000000 ;nor的读指令的频率，根据nor的spsc来填写
+;freq=86000000      ;除了读指令以外其它指令的频率，根据nor的spsc来填写
+;
+;[spinor1]          ;第2款nor 的配置(WINBON)
+;rdid=0x001630EF    ;
+;capaticy=32        ;
+;freq_read=33000000 ;
+;freq=50000000      ;
+;--------------------------------------------------------
+
+[spinor_para]
+spinor_patten_num = 3
+
+[spinor0]
+rdid=0x001620c2
+capaticy=32
+freq_read=33000000
+freq=86000000
+
+[spinor1]
+rdid=0x00469d7f
+capaticy=32
+freq_read=10000000
+freq=50000000
+
+
+[spinor2]
+rdid=0x001820c2
+capaticy=128
+freq_read=33000000
+freq=86000000
+
+
+;--------------------------------------------------------
+; Bat_Cap注释:使用的电池容量,mAh表示.
+; Discharge_current_Rate:如果无外部BAT--IPSOUT并联的PMOS,
+; 此出为10;如果有,则为总电流除以AXP18X内部流过的电流再乘10.
+; 如35表示BAT总电流是从AXP18X内部流过电流的3.5倍.初始可将此
+; 处设置为10,然后进入监控界面看内部流过的电流,并用万用表量
+; 测电池端实际总电流来获得参数值.
+;--------------------------------------------------------
+[power]
+Battery_cap    = 2200
+Discharge_rate = 10
+
+
+;--------------------------------------------------------
+; boot阶段使用的参数
+;--------------------------------------------------------
+[boot_extend]
+hold_key_min  = 0xf0000000
+hold_key_max  = 0xf0000000
+vol_threshold = 3500
+
+;卡升级结束是否重启系统 1:重启  0：否
+[modupdate]
+reset	=	0
+
+
+;--------------------------------------------------------
+;               mbr的大小, 以Kbyte为单位
+;--------------------------------------------------------
+[mbr]
+size = 1
+
+
+;--------------------------------------------------------
+;                   分区配置
+;  当前分区的个数.
+;
+;  [part_num]
+;      num     = 1        ;//有1个分区
+;
+;  partition 定义范例:
+;    [partition0]         ;//第0个分区
+;    class_name  = DISK   ;//设备类名, 如:"DISK".
+;    name        = ROOTFS ;//设备节点名.  如:"ROOTFS".
+;    size_hi     = 0      ;//分区大小的高32位, 单位: Kbyte.
+;    size_lo     = 2696   ;//分区大小的低32位, 单位: Kbyte.
+;
+; 注：1、name唯一, 不允许同名
+;     2、最大分区号为6
+;     3、class_name和name最大12个字符
+;     4、size_hi + size_lo = 0, 表示此分区不存在
+;--------------------------------------------------------
+[part_num]
+num = 2
+
+[partition0]
+    class_name  = DISK
+    name        = ROOTFS
+    size_hi     = 0
+    size_lo     = 7591
+    
+[partition1]
+    class_name  = DISK
+    name        = SYSDATAFS
+    size_hi     = 0
+    size_lo     = 256    
+
+;********************************************************************************************************************
+;                     固件包下载位置 ： 把某个固件包下载到指定分区, 下载次数最大为7次
+;
+;[downloadi]                                //固件包0下载位置
+;    part_name      = SYSDATAFS             //分区名
+;    pkt_name       = ROOTFS_000000000      //固件包名称
+;    verify_file    = VERIFY_000000000      //校验文件名称
+;
+; 注：1、 downloadi 表示第i次下载固件, download 唯一, 请不要随意修改
+;     2、 part_num 为分区号, 即固件下载的位置
+;     3、 pkt_name 固件包名称. 最大长度为16byte, 且名称固定. 可参考"..\\ePDK\workspace\suni\liveclick\image.cfg"
+;     4、 verify_file 为校验文件名称. 可参考"..\\ePDK\workspace\suni\liveclick\image.cfg"
+;     5、 pkt_name 内容不填, 表示本次下载取消.  verify_file内容不填, 表示不需要校验.
+;
+; 如：要把固件包zdisk.img, 下载在到SYSDATAFS分区里。其配置为：
+; [download0]
+;      part_name   = SYSDATAFS
+;      pkt_name     = ROOTFS_000000000
+;      verify_file  = VERIFY_000000000
+;********************************************************************************************************************
+[down_num]
+down_num = 2
+
+[download0]
+part_name   = ROOTFS
+pkt_name    = ROOTFS_000000000
+verify_file = VERIFY_000000000
+encrypt     = 0

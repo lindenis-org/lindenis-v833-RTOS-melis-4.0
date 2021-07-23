@@ -1,0 +1,12 @@
+menu "Melis Source Support"
+
+config  DRIVER_SDMMC
+        bool "Support SDMMC Driver"
+        default n
+
+config  DRIVER_REGULATOR
+        bool "Support REGULATOR"
+        default n
+
+    source "ekernel/drivers/drv/source/ram_dev/Kconfig"
+endmenu

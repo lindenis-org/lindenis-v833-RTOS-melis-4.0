@@ -1,0 +1,38 @@
+
+menu "Commands"
+
+    config  COMMAND_FORK
+        bool "Fork Command"
+        default y
+
+    config  COMMAND_MEM_LAYOUT
+        bool "Mem Layout Command"
+        default n
+
+    config  COMMAND_DATE
+        bool "Date Command"
+        default y
+
+    config  COMMAND_EXIT
+        bool "Exit Command"
+        default y
+
+    config  COMMAND_ADBD
+        bool "Adbd Command"
+        default y
+
+    config  COMMAND_HELLOWORLD
+        bool "helloworld Command"
+        default n
+
+    config  COMMAND_RTT_VERSION
+        bool "version Command"
+        default n
+
+    config  COMMAND_WATCHDOG
+        bool "watchdog Command"
+        default n
+
+source "ekernel/subsys/finsh_cli/commands/iobox/Kconfig"
+
+endmenu

@@ -1,0 +1,9 @@
+*.drv
+*.axf
+*.drv
+*.mod
+*.iso
+*.plg
+*.zgj
+verify.fex
+!.gitignore

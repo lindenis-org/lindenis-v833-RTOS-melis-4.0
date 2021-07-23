@@ -1,0 +1,521 @@
+[system]
+scriptver =0
+uistyle	  =
+name	  =
+author	  =
+solution  =
+;以下不要修改
+stylename =
+;styleid   = 1
+
+; resource
+; id 从1开始逐个分配，file为NULL，id也递增
+; 资源section的顺序不可改变
+
+[res_1]
+name	  =ICON_BMP_ARROW_BMP
+file	  =NULL
+commentCN =箭头图标
+commentEN =arrow_bmp
+;id		  = 0x026F
+
+;#define ID_ICON_BMP_ARROW_BMP    		    0x026F
+
+[res_2]
+name	  =ICON_BMP_CHINESE_S_BMP
+file	  =NULL
+commentCN =设置简体中文图标
+commentEN =chinese_s_bmp
+;id		  = 0x0270
+
+;#define ID_ICON_BMP_CHINESE_S_BMP    		0x0270
+
+[res_3]
+name	  =ICON_BMP_CHINESE_T_BMP
+file	  =NULL
+commentCN =设置繁体中文图标
+commentEN =chinese_t_bmp
+;id		  = 0x0271
+
+
+;#define ID_ICON_BMP_CHINESE_T_BMP    		0x0271
+
+[res_4]
+name	  =ICON_BMP_EBOOK_BMP
+file	  =NULL
+commentCN =电子书非焦点图标
+commentEN =ebook_bmp
+;id		  = 0x0272
+
+
+;#define ID_ICON_BMP_EBOOK_BMP    		    0x0272
+
+
+[res_5]
+name	  =ICON_BMP_EBOOK_FCS_BMP
+file	  =NULL
+commentCN =电子书焦点图标
+commentEN =ebook_fcs_bmp
+;id		  = 0x0273
+
+
+;#define ID_ICON_BMP_EBOOK_FCS_BMP    		0x0273
+
+
+[res_6]
+name	  =ICON_BMP_ENERGY0_BMP
+file	  =NULL
+commentCN =电量0%显示图标
+commentEN =energy0_bmp
+;id		  = 0x0274
+
+
+;#define ID_ICON_BMP_ENERGY0_BMP    		    0x0274
+
+
+[res_7]
+name	  =ICON_BMP_ENERGY1_BMP
+file	  =NULL
+commentCN =电量25%显示图标
+commentEN =energy1_bmp
+;id		  = 0x0275
+
+
+;#define ID_ICON_BMP_ENERGY1_BMP    		    0x0275
+
+[res_8]
+name	  =ICON_BMP_ENERGY2_BMP
+file	  =NULL
+commentCN =电量50%显示图标
+commentEN =energy2_bmp
+;id		  = 0x0276
+
+
+
+;#define ID_ICON_BMP_ENERGY2_BMP    		    0x0276
+
+
+[res_9]
+name	  =ICON_BMP_ENERGY3_BMP
+file	  =NULL
+commentCN =电量75%显示图标
+commentEN =energy3_bmp
+;id		  = 0x0277
+
+
+;#define ID_ICON_BMP_ENERGY3_BMP    		    0x0277
+
+[res_10]
+name	  =ICON_BMP_ENERGY4_BMP
+file	  =NULL
+commentCN =电量100%显示图标
+commentEN =energy4_bmp
+;id		  = 0x0278
+
+;#define ID_ICON_BMP_ENERGY4_BMP    		    0x0278
+
+
+[res_11]
+name	  =ICON_BMP_ENGLISH_BMP
+file	  =NULL
+commentCN =设置英文图标
+commentEN =english_bmp
+;id		  = 0x0279
+
+;#define ID_ICON_BMP_ENGLISH_BMP    		    0x0279
+
+[res_12]
+name	  =ICON_BMP_FM_BMP
+file	  =NULL
+commentCN =FM非焦点图标
+commentEN =fm_bmp
+;id		  = 0x027A
+
+
+;#define ID_ICON_BMP_FM_BMP    		        0x027A
+
+[res_13]
+name	  =ICON_BMP_FMRECIEVER_BMP
+file	  =NULL
+commentCN =FM接受图标
+commentEN =fmreciever_bmp
+;id		  = 0x027B
+
+;#define ID_ICON_BMP_FMRECIEVER_BMP    		0x027B
+
+[res_14]
+name	  =ICON_BMP_FMSENDER_BMP
+file	  =NULL
+commentCN =FM发射图标
+commentEN =fmsender_bmp
+;id		  = 0x027C
+
+;#define ID_ICON_BMP_FMSENDER_BMP    		0x027C
+
+
+[res_15]
+name	  =ICON_BMP_FM_FCS_BMP
+file	  =NULL
+commentCN =FM焦点图标
+commentEN =fm_fcs_bmp
+;id		  = 0x027D
+
+
+;#define ID_ICON_BMP_FM_FCS_BMP    		    0x027D
+
+
+[res_16]
+name	  =ICON_BMP_FRAME_BMP
+file	  =NULL
+commentCN =？？？？？
+commentEN =frame_bmp
+;id		  = 0x027E
+
+
+;#define ID_ICON_BMP_FRAME_BMP    		    0x027E
+
+[res_17]
+name	  =ICON_BMP_GAMES_BMP
+file	  =NULL
+commentCN =游戏非焦点图标
+commentEN =games_bmp
+;id		  = 0x027F
+
+
+;#define ID_ICON_BMP_GAMES_BMP    		    0x027F
+
+
+[res_18]
+name	  =ICON_BMP_GAMES_FCS_BMP
+file	  =NULL
+commentCN =游戏焦点图标
+commentEN =games_fcs_bmp
+;id		  = 0x0280
+
+;#define ID_ICON_BMP_GAMES_FCS_BMP    		0x0280
+
+
+[res_19]
+name	  =ICON_BMP_LINE_BMP
+file	  =NULL
+commentCN =？？？？？
+commentEN =line_bmp
+;id		  = 0x0281
+
+#define ID_ICON_BMP_LINE_BMP    		    0x0281
+
+
+[res_20]
+name	  =ICON_BMP_MUSIC_BMP
+file	  =NULL
+commentCN =音乐播放器非焦点图标
+commentEN =music_bmp
+;id		  = 0x0282
+
+
+;#define ID_ICON_BMP_MUSIC_BMP    		    0x0282
+
+
+[res_21]
+name	  =ICON_BMP_MUSIC_FCS_BMP
+file	  =NULL
+commentCN =音乐播放器焦点图标
+commentEN =music_fcs_bmp
+;id		  = 0x0283
+
+
+;#define ID_ICON_BMP_MUSIC_FCS_BMP    		0x0283
+
+
+[res_22]
+name	  =ICON_BMP_PHOTO_BMP
+file	  =NULL
+commentCN =图片浏览器非焦点图标
+commentEN =photo_bmp
+;id		  = 0x0284
+
+
+;#define ID_ICON_BMP_PHOTO_BMP    		    0x0284
+
+
+
+[res_23]
+name	  =ICON_BMP_PHOTO_FCS_BMP
+file	  =NULL
+commentCN =图片浏览器焦点图标
+commentEN =photo_fcs_bmp
+;id		  = 0x0285
+
+
+
+;#define ID_ICON_BMP_PHOTO_FCS_BMP    		0x0285
+
+
+
+[res_24]
+name	  =ICON_BMP_PLAY_BACK_BMP
+file	  =NULL
+commentCN =？？？？？
+commentEN =play_back_bmp
+;id		  = 0x0286
+
+
+;#define ID_ICON_BMP_PLAY_BACK_BMP    		0x0286
+
+
+[res_25]
+name	  =ICON_BMP_RECORD_BMP
+file	  =NULL
+commentCN =录音非焦点图标
+commentEN =record_bmp
+;id		  = 0x0287
+
+
+;#define ID_ICON_BMP_RECORD_BMP    		    0x0287
+
+
+[res_26]
+name	  =ICON_BMP_RECORD_FCS_BMP
+file	  =NULL
+commentCN =录音焦点图标
+commentEN =record_fcs_bmp
+;id		  = 0x0288
+
+;#define ID_ICON_BMP_RECORD_FCS_BMP    		0x0288
+
+
+[res_27]
+name	  =ICON_BMP_RECORD_GO_BMP
+file	  =NULL
+commentCN =正在录音提示图标
+commentEN =record_go_bmp
+;id		  = 0x0289
+
+
+;#define ID_ICON_BMP_RECORD_GO_BMP    		0x0289
+
+
+[res_28]
+name	  =ICON_BMP_SETTINGS_BMP
+file	  =NULL
+commentCN =设置非焦点图标
+commentEN =settings_bmp
+;id		  = 0x028A
+
+
+;#define ID_ICON_BMP_SETTINGS_BMP    		0x028A
+
+
+[res_29]
+name	  =ICON_BMP_SETTINGS_FCS_BMP
+file	  =NULL
+commentCN =设置焦点图标
+commentEN =settings_fcs_bmp
+;id		  = 0x028B
+
+
+;#define ID_ICON_BMP_SETTINGS_FCS_BMP    	0x028B
+
+
+[res_30]
+name	  =ICON_BMP_SET_CLSSCN_BMP
+file	  =NULL
+commentCN =？？？？？
+commentEN =set_clsscn_bmp
+;id		  = 0x028C
+
+
+;#define ID_ICON_BMP_SET_CLSSCN_BMP    		0x028C
+
+
+[res_31]
+name	  =ICON_BMP_SET_DISPLAY_BMP
+file	  =NULL
+commentCN =设置输出图标
+commentEN =set_display_bmp
+;id		  = 0x028D
+
+
+;#define ID_ICON_BMP_SET_DISPLAY_BMP    		0x028D
+
+
+[res_32]
+name	  =ICON_BMP_SET_ICON_BMP
+file	  =NULL
+commentCN =？？？？
+commentEN =set_icon_bmp
+;id		  = 0x028E
+
+
+;#define ID_ICON_BMP_SET_ICON_BMP    		0x028E
+
+
+[res_33]
+name	  =ICON_BMP_SET_ICON_FCS_BMP
+file	  =NULL
+commentCN =？？？？？
+commentEN =set_icon_fcs_bmp
+;id		  = 0x028F
+
+
+
+;#define ID_ICON_BMP_SET_ICON_FCS_BMP    	0x028F
+
+
+[res_34]
+name	  =ICON_BMP_SET_LANAGE_BMP
+file	  =NULL
+commentCN =设置语言图标
+commentEN =set_lanage_bmp
+;id		  = 0x0290
+
+
+;#define ID_ICON_BMP_SET_LANAGE_BMP    		0x0290
+
+
+[res_35]
+name	  =ICON_BMP_SET_POWER_BMP
+file	  =NULL
+commentCN =设置电源管理图标
+commentEN =set_power_bmp
+;id		  = 0x0291
+
+
+;#define ID_ICON_BMP_SET_POWER_BMP    		0x0291
+
+
+
+[res_36]
+name	  =ICON_BMP_SET_POWOFF_BMP
+file	  =NULL
+commentCN =设置定时关机图标
+commentEN =set_powoff_bmp
+;id		  = 0x0292
+
+
+;#define ID_ICON_BMP_SET_POWOFF_BMP    		0x0292
+
+
+
+[res_37]
+name	  =ICON_BMP_SET_POWSAVE_BMP
+file	  =NULL
+commentCN =设置省电模式图标
+commentEN =set_powsave_bmp
+;id		  = 0x0293
+
+
+;#define ID_ICON_BMP_SET_POWSAVE_BMP    		0x0293
+
+
+[res_38]
+name	  =ICON_BMP_SET_RESTORE_BMP
+file	  =NULL
+commentCN =设置恢复出厂设置图标
+commentEN =set_restore_bmp
+;id		  = 0x0294
+
+
+;#define ID_ICON_BMP_SET_RESTORE_BMP    		0x0294
+
+
+[res_39]
+name	  =ICON_BMP_SET_SOUND_BMP
+file	  =NULL
+commentCN =设置声音图标
+commentEN =set_sound_bmp
+;id		  = 0x0295
+
+;#define ID_ICON_BMP_SET_SOUND_BMP    		0x0295
+
+
+
+[res_40]
+name	  =ICON_BMP_SET_SYSINFO_BMP
+file	  =NULL
+commentCN =设置系统信息图标
+commentEN =set_sysinfo_bmp
+;id		  = 0x0296
+
+
+;#define ID_ICON_BMP_SET_SYSINFO_BMP    		0x0296
+
+
+[res_41]
+name	  =ICON_BMP_VIDEO_BMP
+file	  =NULL
+commentCN =视频播放器非焦点图标
+commentEN =video_bmp
+;id		  = 0x0297
+
+
+;#define ID_ICON_BMP_VIDEO_BMP    		    0x0297
+
+
+[res_42]
+name	  =ICON_BMP_VIDEO_FCS_BMP
+file	  =NULL
+commentCN =视频播放器焦点图标
+commentEN =video_fcs_bmp
+;id		  = 0x0298
+
+
+;#define ID_ICON_BMP_VIDEO_FCS_BMP    		0x0298
+
+
+[res_43]
+name	  =ICON_BMP_WHITE_POINT_BMP
+file	  =NULL
+commentCN =？？？？？？
+commentEN =white_point_bmp
+;id		  = 0x0299
+
+;#define ID_ICON_BMP_WHITE_POINT_BMP    		0x0299
+
+
+
+[res_44]
+name	  =ICON_BMP__EXTERNALDISK0_BMP
+file	  =NULL
+commentCN =外部盘图标
+commentEN =_externaldisk0_bmp
+;id		  = 0x029A
+
+
+
+#define ID_ICON_BMP__EXTERNALDISK0_BMP    	0x029A
+
+
+[res_45]
+name	  =ICON_BMP__EXTERNALDISK1_BMP
+file	  =NULL
+commentCN =外部盘图标
+commentEN =_externaldisk1_bmp
+;id		  = 0x029B
+
+
+;#define ID_ICON_BMP__EXTERNALDISK1_BMP    	0x029B
+
+
+
+[res_46]
+name	  =ICON_BMP__LOCALDISK_BMP
+file	  =NULL
+commentCN =本地盘图标
+commentEN =_localdisk_bmp
+;id		  = 0x029C
+
+
+;#define ID_ICON_BMP__LOCALDISK_BMP    		0x029C
+
+
+[res_47]
+name	  =ICON_BMP__MEDIALIB_BMP
+file	  =NULL
+commentCN =媒体库图标
+commentEN =_medialib_bmp
+;id		  = 0x029D
+
+
+;#define ID_ICON_BMP__MEDIALIB_BMP    		0x029D
+

@@ -1,0 +1,5 @@
+ca_enable:<1>
+erase_ca_info:<0>
+write_ca_info:<0>
+update_soft_enable:<1>
+update_path:<ePDKv100.img>

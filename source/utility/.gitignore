@@ -1,0 +1,15 @@
+*
+!*.*
+!*/
+minigui/package/libpng-1.2.37/*
+minigui/package/libminigui-3.0.12-linux/*
+*.d
+*.o
+*.a
+!Makefile
+!makefile
+*.Plo
+*.lo
+*.la
+.err
+*.swp

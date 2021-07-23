@@ -1,0 +1,94 @@
+v0.9 release notes:
+
+系统：
+1.支持最大512M内存配置，支持申请不超过HEAP大小的的内存大小无限制。
+2.-Os优化编译，节省运行空间
+3.CPU CLK从800M提升到1.2GHZ
+4.BOOT启动时间优化800MS
+5.修复文件系统问题若干
+6.修复系统稳定性问题若干
+7.修复ce_test用例失败的问题
+8.更新RTC文档和实现API。
+9.增加OTA接口说明文档和OTA流程测试用例，具体参考开发手册。
+
+多媒体：
+ 1.修复多媒体解码显示局花的问题
+ 2.修复抓图用例图片色彩失真问题
+ 3.修复H265视频录制文件播放画面失真花屏问题
+ 4.修复双声道音频哦方失败的问题
+ 5.新增多路VIPP采集和显示的用例演示，注意看开发手册中的更新
+ 6.新增OSD功能演示，sample_region用例
+ 7.添加AEC回声消除的初步代码，此版本待验证
+
+ 网络:
+  1.更新博通驱动库
+  2. 解决回环测试数据丢失问题
+  3.解决wget下载返回400错误
+  4.添加libcurl和telnet代码，待集成验证
+
+v0.9_patch1:
+  1.修复双声道播放崩溃问题
+  2.sample_virvi2vo增加三路vipp显示的支持
+  3.移植sample_rigon，测试vipp和ven的osd功能
+  4.编写sample_vi_g2d演示g2d的旋转，缩放，crop功能
+  5.系统优化，从上电到第一帧数据放到内存260ms.
+  6.系统优化，解决几条稳定性问题
+  7.更新开发手册，加入flash map和快速启动使用说明
+
+v0.9_patch2:
+  1.添加libcurl源码
+  2.添加libcur.https/dns测试用例，http链接测试通过
+  3.更新bcmlib, 适配wifi唤醒功能
+  4.添加基础版本ifconfig命令.
+  5.对TF卡读写添加缓存层，提高读写效率
+  6.修复文件系统若干问题
+  7.修复p,m命令检查地址失败
+  8.添加文件系统多路写测试命令
+  9.修复3A效果前丢帧问题，sample_virvi.c demo.
+  10.VE支持多通道编码
+  11.集成sample_qigan_virv2venc命令
+  12.修复多媒体编码图像色彩失真问题
+  13.更新工具链，支持iconv字符集转换函数,此版本务必更换工具链
+  14.更新开发手册
+
+v0.9_patch3:
+  1.修复多媒体测试用例多次老化死机问题
+  2.修复c2398 sensor快启动打印时间戳异常的问题
+  3.优化c2398初始化时序，加快启动速度(但由于c2398本身spec的启动时序必须满足，所以初始化时间仍然比imx386要长，这属于模组的limitation);
+  4.支持spinor-flash锁保护机制, 新增XM25QH256B锁保护.
+  5.修复串口打印字符序列和预期不一致的问题
+  6.增加多媒体老化测试用例
+  7.增加基于mbedtls的https测试用例并调通
+  8.提供sample_multi_vi2venc2muxer演示４路编码加拍照
+  9.支持回声消除，用sample_aec演示
+  10.移动植mpp framework,使用sample_camera, sample_encoderesolutionchange, sample_audioencode, sample_player演示预览，拍照，视频录制，视频播放，音频播放　
+  11.update user mannual.
+
+v1.0
+  1. open eboot source code.
+
+2020/06/15 release notes:
+1.enable thumb compile for the whole sdk to minimilize the code size.
+2.fix tlb map issues
+3.add test case for multimedia.
+4.fix issue of twi communitcation with sensors.
+5.imporve document of how to debug with jlink on winodows.
+6.add flash lock protect mechanism.
+7.support gzip compress. 
+8.re-construct system firmware header for transfer parameter from boot0 to kernel.
+
+2021/4/20
+base on commit:0c64bc9c36d614af8e39d295eba5362eccd1d06c
+本次更新是在melis-4.0-v459-V1.0-release大版本的基础上做的增量升级，所以请参照melis-4.0-v459-V1.0-release版本。
+由于从melis-4.0-v459-V1.0-release去年9月30日发布到现在，半年多的时间内，部分特性支持，性能优化，以及bug修复的问题并未全部通过一号通发布。为了保证以后的客户案支持能够在双方一致的基础上进行，本次发布使用源码包的形式，之后再回复使用补丁。
+
+发布文件:source-0c64bc9c36d6.tar.bz2
+使用方式：删除melis-4.0-v459-V1.0-release发布的source目录，用解压source-0c64bc9c36d6.tar.xz后的source目录替代。
+更新特性：
+1.hal spi问题修复，增加传输速度
+2.文件系统优化
+3.支持g711a,g711u.g726音频编码，暂不支持解码（进行中）。
+
+注意：
+由于对SDK的修改可能包括客户的修改部分，并不一定全部是原厂的修改，所以建议合并分成两部，第一步，以melis-4.0-v459-V1.0-release版本为基础做增量升级，第二部，并通过beyconpare对比，将OEM商的修改何如。
+如果有任何问题，请通过支持群第一时间让我知道。

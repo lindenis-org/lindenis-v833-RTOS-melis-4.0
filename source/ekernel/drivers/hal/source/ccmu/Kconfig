@@ -1,0 +1,7 @@
+menu "CCMU Devices"
+
+config DRIVERS_CCMU
+    bool "enable ccmu driver"
+        default y
+
+endmenu

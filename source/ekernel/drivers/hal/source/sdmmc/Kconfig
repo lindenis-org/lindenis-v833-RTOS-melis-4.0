@@ -1,0 +1,15 @@
+menu "sdmmc Devices"
+
+config SUNXI_DRIVERS_SDMMC
+    bool "enable SUNXI SDMMC device drivers"
+        default y
+
+config DETECT_CARD
+    bool "enable SUNXI SDMMC detect card"
+	depends on SUNXI_DRIVERS_SDMMC
+	default y
+
+
+#menu "SDMMC option freatuers"
+
+endmenu

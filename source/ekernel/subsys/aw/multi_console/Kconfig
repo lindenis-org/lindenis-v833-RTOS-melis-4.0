@@ -1,0 +1,25 @@
+menu "AW Multi-Console Compenents"
+
+config COMPONENTS_MULTI_CONSOLE
+    bool "Melis Multi Console"
+    default y
+    help
+        Melis Multi Console Support.
+        If unsure, say N.
+
+if COMPONENTS_MULTI_CONSOLE
+
+config MULTI_CONSOLE_DEBUG
+    bool "Melis Multi-Console Debug"
+    default n
+    help
+        Melis Multi-Console Debug.
+
+config MULTI_CONSOLE_REDIRECT_CMD
+    bool "Melis Multi-Console Redirect Command"
+    default n
+    help
+        Melis Multi-Console Redirece Command.
+endif
+
+endmenu

@@ -1,0 +1,9 @@
+call cc fat_cache
+call cc fat_dir
+call cc fat_entry
+call cc fat_file
+call cc fat_format
+call cc fat_inode
+call cc fat_misc
+call cc fat_namei
+call cc fatfs

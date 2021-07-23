@@ -1,0 +1,25 @@
+subdir-ccflags-y += -I$(obj)/osal/include
+
+obj-y += ccmu/
+obj-y += serial/
+obj-$(CONFIG_DRIVER_REGULATOR) += regulator/
+obj-y += regulator/weak.o
+obj-y += rtc/
+obj-y += spi/
+obj-y += watchdog/
+obj-y += osal/
+obj-y += gpio/
+obj-y += spinor/
+obj-y += timer/
+obj-y += sdmmc/
+obj-y += dma/
+obj-y += sound/
+obj-y += twi/
+obj-y += pwm/
+obj-y += gpadc/
+obj-y += usb/
+obj-y += g2d_rcq/
+obj-y += efuse/
+obj-y += thermal/
+obj-y += ce/
+obj-y += eise/

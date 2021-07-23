@@ -1,0 +1,11 @@
+!bin/3rd/libfz_a_p.a
+!bin/3rd/libejTTS.a
+!bin/3rd/libts_all_rec.a
+!bin/3rd/libaudio_mixer.a
+!libc/mediainfo/3rd/GetAudio_format.a
+!bin/3rd/cedar/plugins/ardr_sw/libAudioGain.a
+!bin/3rd/cedar/plugins/ardr_sw/libAudioMixResample.a
+!bin/3rd/cedar/plugins/ardr_sw/libardr_sw_lib.a
+!bin/3rd/cedar/plugins/audio_rec/libAudioGain.a
+!bin/3rd/cedar/plugins/audio_rec/libAudioPostProc.a
+!.gitignore

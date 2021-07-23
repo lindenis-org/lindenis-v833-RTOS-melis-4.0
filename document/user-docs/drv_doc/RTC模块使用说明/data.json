@@ -1,0 +1,20 @@
+{
+	"title_line_1" : "V459 melis",
+	"title_line_2" : "RTC接口说明",
+
+	"dates" : [
+		{"date":"2020.04.29"}
+	],
+
+	"version" :[
+		{"ver":"1.0"}
+	],
+
+	"developer" : [
+		{"dev":"AWA1637"}
+	],
+
+	"description" : [
+		{"desc":""}
+	]
+}

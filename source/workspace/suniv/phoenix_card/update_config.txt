@@ -1,0 +1,2 @@
+ca_enable:<0>
+update_path:<ePDKv100.img>

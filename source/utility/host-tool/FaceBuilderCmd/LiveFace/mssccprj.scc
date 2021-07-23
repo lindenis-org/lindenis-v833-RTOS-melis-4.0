@@ -1,0 +1,13 @@
+SCC = This is a Source Code Control file
+
+[LiveFace.dsp]
+SCC_Aux_Path = "F:\VCSoureSafe\eStdio"
+SCC_Project_Name = "$/Studio/STUDIODEV/LiveFace_100/FaceBuilderCmd/LiveFace", HPJAAAAA
+
+[LiveFace.dsw]
+SCC_Aux_Path = "F:\VCSoureSafe\eStdio"
+SCC_Project_Name = "$/Studio/STUDIODEV/LiveFace_100/FaceBuilderCmd/LiveFace", HPJAAAAA
+
+[LiveFace.mak]
+SCC_Aux_Path = "F:\VCSoureSafe\eStdio"
+SCC_Project_Name = "$/Studio/STUDIODEV/LiveFace_100/FaceBuilderCmd/LiveFace", HPJAAAAA

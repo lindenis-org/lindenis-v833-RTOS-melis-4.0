@@ -1,0 +1,27 @@
+1.参考./source/ekernel/Makefile的usrlibs-y变量
+
+ ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+ 29  
+ 30 usrlibs-y               += -L$(srctree)/${elibrary-libs} \
+ 31                         ¦  --start-group \
+ 32                         ¦  --end-group
+ 33  
+ ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+step1:
+ 将静态库放在./source/elibrary/bin/目录下
+
+step2:
+ 将静态库重命名为libxxxx.a的形式
+
+step3:
+ 在上图31行和32行--start-group, --end-group之间，插入静态库的引用 -lxxxx，
+ 重新编译即可。
+ ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+ 29  
+ 30 usrlibs-y               += -L$(srctree)/${elibrary-libs} \
+ 31                            --start-group \
+				-lxxxx       \
+ 32                            --end-group
+ 33  
+ ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''

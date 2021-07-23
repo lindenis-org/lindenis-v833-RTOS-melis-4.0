@@ -1,0 +1,11 @@
+bin/*
+!bin/readme.txt
+!drv_touchpanel/ts/*.a
+*.drv
+*.axf
+*.drv
+*.mod
+*.zgj
+*.bin
+*.plg
+!.gitignore

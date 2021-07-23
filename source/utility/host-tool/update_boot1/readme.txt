@@ -1,0 +1,4 @@
+
+1、疑点1:直接将script_buf挂入boot1.bin当中
+2、dram_para数据结构不一致
+3、在指定spi_norflash启动时，却将card_boot0_para的值写入storage_para中

@@ -1,0 +1,23 @@
+menu "Melis Legacy Support"
+
+config  MELIS_LEGACY_DRIVER_MAN
+        bool "Support Melis Legacy Driver Management"
+        select DEVFS
+        default n
+
+config  LEGACY_DMS_DEV
+        bool "Support Melis Legacy DMS Device"
+        depends on MELIS_LEGACY_DRIVER_MAN
+        default n
+
+config  LEGACY_HWSC_DEV
+        bool "Support Melis Legacy HWSC Device"
+        depends on MELIS_LEGACY_DRIVER_MAN
+        default n
+
+config  LEGACY_RAMDISK_DEV
+        bool "Support Melis Legacy RAMDISK Device"
+        depends on MELIS_LEGACY_DRIVER_MAN
+        default n
+
+endmenu
